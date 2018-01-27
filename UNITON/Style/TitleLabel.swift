@@ -24,7 +24,7 @@ class TitleLabel: UILabel {
     func commonInit(){
         self.font = UIFont(name: "AppleSDGothicNeo-Bold", size: 22)
         
-        self.textColor = UIColor(red: 120/255, green: 120/255, blue: 120/255, alpha: 120/255)
+        self.textColor = UIColor(red: 120/255, green: 120/255, blue: 120/255, alpha: 1)
     }
  
 

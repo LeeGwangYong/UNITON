@@ -22,6 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             credentialsProvider: credentialProvider)
         
         AWSServiceManager.default().defaultServiceConfiguration = configuration
+    
         return true
     }
 

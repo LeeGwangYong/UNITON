@@ -1,5 +1,5 @@
 //
-//  RecommendCollectionViewCell.swift
+//  FindCollectionViewCell.swift
 //  UNITON
 //
 //  Created by 이광용 on 2018. 1. 27..
@@ -8,8 +8,9 @@
 
 import UIKit
 
-class RecommendCollectionViewCell: UICollectionViewCell {
+class FindCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var thumbnailImageView: UIImageView!
+    @IBOutlet weak var writerLabel: UILabel!
     @IBOutlet weak var bookNameLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()

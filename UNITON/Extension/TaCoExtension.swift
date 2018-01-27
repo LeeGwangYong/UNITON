@@ -31,22 +31,24 @@ extension UICollectionViewCell {
     func animateZoomforCell()
     {
         UIView.animate(
-            withDuration: 0.2,
+            withDuration: 0.3,
             delay: 0,
             options: UIViewAnimationOptions.curveEaseOut,
             animations: {
                 self.transform = CGAffineTransform.init(scaleX: 1.5, y: 1.5)
+                self.alpha = 1
         },
             completion: nil)
     }
     func animateZoomforCellremove()
     {
         UIView.animate(
-            withDuration: 0.2,
+            withDuration: 0.3,
             delay: 0,
             options: UIViewAnimationOptions.curveEaseOut,
             animations: {
                 self.transform = CGAffineTransform.init(scaleX: 1.0, y: 1.0)
+                self.alpha = 0.2
         },
             completion: nil)
         

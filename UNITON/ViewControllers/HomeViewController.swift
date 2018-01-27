@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class HomeViewController: UIViewController {
     //MARK -: Properties
     @IBOutlet weak var recommendCollectionView: UICollectionView!
@@ -21,11 +22,16 @@ class HomeViewController: UIViewController {
     }
     
     func setUpViewController() {
+        
+        backgroundImage()
+        transparentNavigationBar()
         self.recommendCollectionView.setUp(target: self, cell: RecommendCollectionViewCell.self)
         self.reviewTableView.setUp(target: self, cell: ReviewTableViewCell.self)
         self.pageControl.isEnabled = false
         self.reviewTableView.alwaysBounceVertical = false
+        self.reviewTableView.backgroundColor = UIColor.clear
         self.recommendCollectionView.alwaysBounceHorizontal = false
+        self.navigationItem.title = ""
     }
     
 }
@@ -37,7 +43,6 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: RecommendCollectionViewCell.reuseIdentifier, for: indexPath) as! RecommendCollectionViewCell
-        cell.thumbnailImageView.backgroundColor = UIColor().random()
         return cell
     }
     
@@ -56,6 +61,13 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         let width = collectionView.bounds.width -  60
         return UIEdgeInsetsMake(0, width / 3 * 1.1, 0, width / 3 * 1.1); // top, left, bottom, right
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let nextVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: DetailViewController.reuseIdentifier)
+        self.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(nextVC, animated: true)
+        self.hidesBottomBarWhenPushed = false
     }
     
     
@@ -92,11 +104,14 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             self.recommendCollectionView.currentCell().animateZoomforCell()
             
             for index in self.recommendCollectionView.indexPathsForVisibleItems {
+                let cell: RecommendCollectionViewCell = self.recommendCollectionView.cellForItem(at: index) as! RecommendCollectionViewCell
                 if index == currentIndex {
-                    self.recommendCollectionView.cellForItem(at: index)?.animateZoomforCell()
+                    cell.animateZoomforCell()
+                    cell.bookNameLabel.alpha = 1
                 }
                 else {
                     self.recommendCollectionView.cellForItem(at: index)?.animateZoomforCellremove()
+                    cell.bookNameLabel.alpha = 0
                 }
             }
         }
@@ -111,6 +126,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: ReviewTableViewCell.reuseIdentifier, for: indexPath) as! ReviewTableViewCell
+        cell.backgroundColor = UIColor.clear
         return cell
     }
     
