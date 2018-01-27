@@ -37,6 +37,7 @@
 		FCF04FDF201CCDEE003A4E42 /* MyReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF04FDD201CCDEE003A4E42 /* MyReviewTableViewCell.swift */; };
 		FCF04FE0201CCDEE003A4E42 /* MyReviewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCF04FDE201CCDEE003A4E42 /* MyReviewTableViewCell.xib */; };
 		FCF04FE2201CD514003A4E42 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF04FE1201CD514003A4E42 /* MyViewController.swift */; };
+		FCF04FE4201CDFBF003A4E42 /* ReviewInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF04FE3201CDFBF003A4E42 /* ReviewInputViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +76,7 @@
 		FCF04FDD201CCDEE003A4E42 /* MyReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyReviewTableViewCell.swift; sourceTree = "<group>"; };
 		FCF04FDE201CCDEE003A4E42 /* MyReviewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyReviewTableViewCell.xib; sourceTree = "<group>"; };
 		FCF04FE1201CD514003A4E42 /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
+		FCF04FE3201CDFBF003A4E42 /* ReviewInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewInputViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 				FCF04FD1201C7B64003A4E42 /* TotalReviewViewController.swift */,
 				FCF04FD5201CA91F003A4E42 /* FindViewController.swift */,
 				FCF04FE1201CD514003A4E42 /* MyViewController.swift */,
+				FCF04FE3201CDFBF003A4E42 /* ReviewInputViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 			files = (
 				FC03C066201B351700095DDF /* SignViewController.swift in Sources */,
 				FC0B8713201C3058002A826F /* RecommendCollectionViewCell.swift in Sources */,
+				FCF04FE4201CDFBF003A4E42 /* ReviewInputViewController.swift in Sources */,
 				FC94BE45201C12D40041959F /* AWSSetting.swift in Sources */,
 				FC0B8722201C6ABC002A826F /* TitleLabel.swift in Sources */,
 				FC03C07E201B399B00095DDF /* APIService.swift in Sources */,

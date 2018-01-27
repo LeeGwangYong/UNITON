@@ -30,28 +30,28 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k8Q-y5-bPI">
-                        <rect key="frame" x="45" y="21" width="607" height="366"/>
+                        <rect key="frame" x="22" y="11" width="653" height="386"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sample" translatesAutoresizingMaskIntoConstraints="NO" id="5qT-FS-MGd">
-                                <rect key="frame" x="18" y="17" width="121.5" height="170"/>
+                                <rect key="frame" x="18" y="17" width="130.5" height="183"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="5qT-FS-MGd" secondAttribute="height" multiplier="1:1.4" id="mht-x7-kJi"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="연애의 온도" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q8j-Xh-7Cs">
-                                <rect key="frame" x="18" y="196" width="121.5" height="14.5"/>
+                                <rect key="frame" x="18" y="209" width="130.5" height="14.5"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="12"/>
                                 <color key="textColor" red="0.32156862749999998" green="0.32156862749999998" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이기주 지음" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NhB-qn-p6D">
-                                <rect key="frame" x="18" y="212.5" width="121.5" height="12"/>
+                                <rect key="frame" x="18" y="225.5" width="130.5" height="12"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Thin" family="Apple SD Gothic Neo" pointSize="10"/>
                                 <color key="textColor" red="0.32156862749999998" green="0.32156862749999998" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="베스트셀러가 되기 전, 누가 서점에서 무지 열심히 읽다가는 걸 보고 따라 읽게됐어요. 말에 대해 이렇게  많은 생각을 할 수 있구나.. 싶었구요. 내가 하는 말에  대해 어쩌고저쩌고 우왕자왕 헤헤ㅔㅎ" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sCq-bo-y4j">
-                                <rect key="frame" x="161.5" y="17" width="416.5" height="47"/>
+                                <rect key="frame" x="170.5" y="17" width="453.5" height="47"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="13"/>
                                 <color key="textColor" red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -91,10 +91,10 @@
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottomMargin" secondItem="k8Q-y5-bPI" secondAttribute="bottom" constant="10" id="C5o-4o-46F"/>
-                    <constraint firstItem="k8Q-y5-bPI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="EAD-63-U5B"/>
-                    <constraint firstItem="k8Q-y5-bPI" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="-25" id="K1l-OL-Mnu"/>
-                    <constraint firstItem="k8Q-y5-bPI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="25" id="r0l-zG-jBH"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="k8Q-y5-bPI" secondAttribute="bottom" id="C5o-4o-46F"/>
+                    <constraint firstItem="k8Q-y5-bPI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="EAD-63-U5B"/>
+                    <constraint firstItem="k8Q-y5-bPI" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="-2" id="K1l-OL-Mnu"/>
+                    <constraint firstItem="k8Q-y5-bPI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="r0l-zG-jBH"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

@@ -29,13 +29,26 @@ extension MyViewController: UITableViewDelegate, UITableViewDataSource {
         return 5
     }
     
-
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        let deleteAction = UITableViewRowAction(style: .destructive, title: "삭제하기") { (deleteAction, indexPath) in
+            //Contact.removeFromRealm(self.contactArray[indexPath.row])
+        }
+        
+        let editAction = UITableViewRowAction(style: .normal, title: "수정하기") { (editAction, indexPath) in
+            
+        }
+        
+        return [deleteAction, editAction]
+    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: MyReviewTableViewCell = tableView.dequeueReusableCell(forIndexPath: indexPath)
         cell.backgroundColor = UIColor.clear
         return cell
     }
-    
+//    
+//    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+//        return 18
+//    }
     
 }
