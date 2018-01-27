@@ -8,6 +8,12 @@ target 'UNITON' do
 	pod 'Alamofire'
 	pod 'lottie-ios'
 	pod 'Kingfisher'
+	pod 'RealmSwift'
+    pod 'naveridlogin-sdk-ios'
+    pod 'AWSMobileClient', '~> 2.6.6'
+    pod 'AWSCognito'
+    pod 'AWSCognitoIdentityProvider'
+    pod 'AWSPolly'
   # Pods for UNITON
 
 end

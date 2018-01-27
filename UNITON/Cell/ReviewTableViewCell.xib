@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="124" id="KGk-i7-Jjw" customClass="ReviewTableViewCell" customModule="UNITON" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="391" height="124"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="391" height="123.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y7D-Hd-D33">
+                        <rect key="frame" x="3" y="3" width="385" height="117.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@_Hyeday_" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ziC-4I-tzo">
+                                <rect key="frame" x="15" y="15" width="72.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LiU-Tl-Rsg">
+                                <rect key="frame" x="340" y="15" width="30" height="30"/>
+                                <state key="normal" title="O"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="베스트셀러가 되기 전, 누가 서점에서 무지 열심히 읽다가는 걸 보고 따라 읽게됐어요. 말에 대해 이렇게  많은 생각을 할 수 있구나.. 싶었구요. 내가 하는 말에   대해 돌아볼 수 있어 좋았어요." lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jfo-ca-nlh">
+                                <rect key="frame" x="17" y="35" width="325.5" height="67"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ziC-4I-tzo" firstAttribute="leading" secondItem="y7D-Hd-D33" secondAttribute="leading" constant="15" id="LPD-H0-B8N"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="jfo-ca-nlh" secondAttribute="bottom" constant="5" id="aUi-8i-z9p"/>
+                            <constraint firstAttribute="trailing" secondItem="LiU-Tl-Rsg" secondAttribute="trailing" constant="15" id="ahQ-7p-wXx"/>
+                            <constraint firstItem="jfo-ca-nlh" firstAttribute="top" secondItem="ziC-4I-tzo" secondAttribute="bottom" constant="3" id="ejK-fX-PtK"/>
+                            <constraint firstItem="LiU-Tl-Rsg" firstAttribute="top" secondItem="y7D-Hd-D33" secondAttribute="top" constant="15" id="fNq-wa-h5k"/>
+                            <constraint firstItem="ziC-4I-tzo" firstAttribute="top" secondItem="y7D-Hd-D33" secondAttribute="top" constant="15" id="gw4-4q-69h"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="y7D-Hd-D33" secondAttribute="trailing" constant="3" id="3Yu-cl-PPh"/>
+                    <constraint firstItem="y7D-Hd-D33" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="3" id="HEN-xX-3KU"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="jfo-ca-nlh" secondAttribute="trailing" constant="35" id="KYU-Cr-ASU"/>
+                    <constraint firstItem="y7D-Hd-D33" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="3" id="TdD-F8-cw6"/>
+                    <constraint firstItem="jfo-ca-nlh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="x3s-5T-JzF"/>
+                    <constraint firstAttribute="bottom" secondItem="y7D-Hd-D33" secondAttribute="bottom" constant="3" id="xF9-wa-0mu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="contentLabel" destination="jfo-ca-nlh" id="5l9-KY-S5m"/>
+                <outlet property="likeButton" destination="LiU-Tl-Rsg" id="cVO-v9-87c"/>
+                <outlet property="nameLabel" destination="ziC-4I-tzo" id="baH-fz-NSA"/>
+            </connections>
+            <point key="canvasLocation" x="127.5" y="94"/>
+        </tableViewCell>
+    </objects>
+</document>

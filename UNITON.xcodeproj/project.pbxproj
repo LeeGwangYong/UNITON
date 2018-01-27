@@ -13,6 +13,18 @@
 		FC03C069201B351700095DDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC03C067201B351700095DDF /* Main.storyboard */; };
 		FC03C06B201B351700095DDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC03C06A201B351700095DDF /* Assets.xcassets */; };
 		FC03C06E201B351700095DDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC03C06C201B351700095DDF /* LaunchScreen.storyboard */; };
+		FC03C07E201B399B00095DDF /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC03C07D201B399B00095DDF /* APIService.swift */; };
+		FC03C081201B39C400095DDF /* SignService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC03C080201B39C400095DDF /* SignService.swift */; };
+		FC03C084201B3A4A00095DDF /* ReuseIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC03C083201B3A4A00095DDF /* ReuseIdentifier.swift */; };
+		FC03C086201B3A6100095DDF /* TaCoExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC03C085201B3A6100095DDF /* TaCoExtension.swift */; };
+		FC03C08A201B3ED000095DDF /* Boat_Loader.json in Resources */ = {isa = PBXBuildFile; fileRef = FC03C089201B3ED000095DDF /* Boat_Loader.json */; };
+		FC0B8713201C3058002A826F /* RecommendCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0B8711201C3058002A826F /* RecommendCollectionViewCell.swift */; };
+		FC0B8714201C3058002A826F /* RecommendCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC0B8712201C3058002A826F /* RecommendCollectionViewCell.xib */; };
+		FC0B8717201C320F002A826F /* ReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0B8715201C320F002A826F /* ReviewTableViewCell.swift */; };
+		FC0B8718201C320F002A826F /* ReviewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC0B8716201C320F002A826F /* ReviewTableViewCell.xib */; };
+		FC94BE45201C12D40041959F /* AWSSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC94BE44201C12D40041959F /* AWSSetting.swift */; };
+		FC94BE47201C166A0041959F /* AWSPolly_TTS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC94BE46201C166A0041959F /* AWSPolly_TTS.swift */; };
+		FC94BE49201C1CB10041959F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC94BE48201C1CB10041959F /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +38,19 @@
 		FC03C06A201B351700095DDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC03C06D201B351700095DDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC03C06F201B351700095DDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC03C07D201B399B00095DDF /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		FC03C080201B39C400095DDF /* SignService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignService.swift; sourceTree = "<group>"; };
+		FC03C083201B3A4A00095DDF /* ReuseIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReuseIdentifier.swift; sourceTree = "<group>"; };
+		FC03C085201B3A6100095DDF /* TaCoExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaCoExtension.swift; sourceTree = "<group>"; };
+		FC03C089201B3ED000095DDF /* Boat_Loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Boat_Loader.json; sourceTree = "<group>"; };
+		FC0B8711201C3058002A826F /* RecommendCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendCollectionViewCell.swift; sourceTree = "<group>"; };
+		FC0B8712201C3058002A826F /* RecommendCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendCollectionViewCell.xib; sourceTree = "<group>"; };
+		FC0B8715201C320F002A826F /* ReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableViewCell.swift; sourceTree = "<group>"; };
+		FC0B8716201C320F002A826F /* ReviewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewTableViewCell.xib; sourceTree = "<group>"; };
+		FC94BE3D201C024F0041959F /* Bridging_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridging_Header.h; sourceTree = "<group>"; };
+		FC94BE44201C12D40041959F /* AWSSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWSSetting.swift; sourceTree = "<group>"; };
+		FC94BE46201C166A0041959F /* AWSPolly_TTS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWSPolly_TTS.swift; sourceTree = "<group>"; };
+		FC94BE48201C1CB10041959F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,16 +95,17 @@
 			isa = PBXGroup;
 			children = (
 				FC03C063201B351700095DDF /* AppDelegate.swift */,
-				FC03C07C201B37AD00095DDF /* Storyboard */,
 				FC03C07B201B379800095DDF /* Model */,
 				FC03C07A201B379200095DDF /* Protocol */,
 				FC03C079201B378B00095DDF /* Extension */,
 				FC03C078201B377800095DDF /* Cell */,
+				FC03C07C201B37AD00095DDF /* Storyboard */,
 				FC03C077201B377100095DDF /* ViewControllers */,
 				FC03C076201B376B00095DDF /* Style */,
 				FC03C075201B375A00095DDF /* Network */,
 				FC03C06A201B351700095DDF /* Assets.xcassets */,
 				FC03C06F201B351700095DDF /* Info.plist */,
+				FC94BE3D201C024F0041959F /* Bridging_Header.h */,
 			);
 			path = UNITON;
 			sourceTree = "<group>";
@@ -87,6 +113,9 @@
 		FC03C075201B375A00095DDF /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				FC03C07D201B399B00095DDF /* APIService.swift */,
+				FC03C080201B39C400095DDF /* SignService.swift */,
+				FC94BE46201C166A0041959F /* AWSPolly_TTS.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -101,7 +130,9 @@
 		FC03C077201B377100095DDF /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				FC03C089201B3ED000095DDF /* Boat_Loader.json */,
 				FC03C065201B351700095DDF /* SignViewController.swift */,
+				FC94BE48201C1CB10041959F /* HomeViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -109,6 +140,10 @@
 		FC03C078201B377800095DDF /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				FC0B8711201C3058002A826F /* RecommendCollectionViewCell.swift */,
+				FC0B8712201C3058002A826F /* RecommendCollectionViewCell.xib */,
+				FC0B8715201C320F002A826F /* ReviewTableViewCell.swift */,
+				FC0B8716201C320F002A826F /* ReviewTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -116,6 +151,8 @@
 		FC03C079201B378B00095DDF /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				FC03C083201B3A4A00095DDF /* ReuseIdentifier.swift */,
+				FC03C085201B3A6100095DDF /* TaCoExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -130,6 +167,7 @@
 		FC03C07B201B379800095DDF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FC94BE44201C12D40041959F /* AWSSetting.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -214,8 +252,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC03C08A201B3ED000095DDF /* Boat_Loader.json in Resources */,
 				FC03C06E201B351700095DDF /* LaunchScreen.storyboard in Resources */,
 				FC03C06B201B351700095DDF /* Assets.xcassets in Resources */,
+				FC0B8718201C320F002A826F /* ReviewTableViewCell.xib in Resources */,
+				FC0B8714201C3058002A826F /* RecommendCollectionViewCell.xib in Resources */,
 				FC03C069201B351700095DDF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -230,17 +271,37 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-UNITON/Pods-UNITON-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AWSAuthCore/AWSAuthCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCognito/AWSCognito.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCognitoIdentityProviderASF/AWSCognitoIdentityProviderASF.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSMobileClient/AWSMobileClient.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSPolly/AWSPolly.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
+				"${PODS_ROOT}/naveridlogin-sdk-ios/NaverThirdPartyLogin.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAuthCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognito.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognitoIdentityProvider.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognitoIdentityProviderASF.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSMobileClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSPolly.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NaverThirdPartyLogin.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -288,6 +349,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC03C066201B351700095DDF /* SignViewController.swift in Sources */,
+				FC0B8713201C3058002A826F /* RecommendCollectionViewCell.swift in Sources */,
+				FC94BE45201C12D40041959F /* AWSSetting.swift in Sources */,
+				FC03C07E201B399B00095DDF /* APIService.swift in Sources */,
+				FC03C081201B39C400095DDF /* SignService.swift in Sources */,
+				FC94BE47201C166A0041959F /* AWSPolly_TTS.swift in Sources */,
+				FC0B8717201C320F002A826F /* ReviewTableViewCell.swift in Sources */,
+				FC94BE49201C1CB10041959F /* HomeViewController.swift in Sources */,
+				FC03C084201B3A4A00095DDF /* ReuseIdentifier.swift in Sources */,
+				FC03C086201B3A6100095DDF /* TaCoExtension.swift in Sources */,
 				FC03C064201B351700095DDF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,6 +502,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.VPLATE.UNITON;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -448,6 +519,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.VPLATE.UNITON;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
