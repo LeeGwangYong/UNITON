@@ -22,6 +22,10 @@
 		FC0B8714201C3058002A826F /* RecommendCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC0B8712201C3058002A826F /* RecommendCollectionViewCell.xib */; };
 		FC0B8717201C320F002A826F /* ReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0B8715201C320F002A826F /* ReviewTableViewCell.swift */; };
 		FC0B8718201C320F002A826F /* ReviewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC0B8716201C320F002A826F /* ReviewTableViewCell.xib */; };
+		FC0B871C201C4ECB002A826F /* Designable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0B871B201C4ECB002A826F /* Designable.swift */; };
+		FC0B871E201C596F002A826F /* DetectCurrentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0B871D201C596F002A826F /* DetectCurrentCell.swift */; };
+		FC0B8720201C6301002A826F /* RandomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0B871F201C6301002A826F /* RandomColor.swift */; };
+		FC0B8722201C6ABC002A826F /* TitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0B8721201C6ABC002A826F /* TitleLabel.swift */; };
 		FC94BE45201C12D40041959F /* AWSSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC94BE44201C12D40041959F /* AWSSetting.swift */; };
 		FC94BE47201C166A0041959F /* AWSPolly_TTS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC94BE46201C166A0041959F /* AWSPolly_TTS.swift */; };
 		FC94BE49201C1CB10041959F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC94BE48201C1CB10041959F /* HomeViewController.swift */; };
@@ -47,6 +51,10 @@
 		FC0B8712201C3058002A826F /* RecommendCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendCollectionViewCell.xib; sourceTree = "<group>"; };
 		FC0B8715201C320F002A826F /* ReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableViewCell.swift; sourceTree = "<group>"; };
 		FC0B8716201C320F002A826F /* ReviewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewTableViewCell.xib; sourceTree = "<group>"; };
+		FC0B871B201C4ECB002A826F /* Designable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Designable.swift; sourceTree = "<group>"; };
+		FC0B871D201C596F002A826F /* DetectCurrentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectCurrentCell.swift; sourceTree = "<group>"; };
+		FC0B871F201C6301002A826F /* RandomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomColor.swift; sourceTree = "<group>"; };
+		FC0B8721201C6ABC002A826F /* TitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleLabel.swift; sourceTree = "<group>"; };
 		FC94BE3D201C024F0041959F /* Bridging_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridging_Header.h; sourceTree = "<group>"; };
 		FC94BE44201C12D40041959F /* AWSSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWSSetting.swift; sourceTree = "<group>"; };
 		FC94BE46201C166A0041959F /* AWSPolly_TTS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWSPolly_TTS.swift; sourceTree = "<group>"; };
@@ -123,6 +131,8 @@
 		FC03C076201B376B00095DDF /* Style */ = {
 			isa = PBXGroup;
 			children = (
+				FC0B871B201C4ECB002A826F /* Designable.swift */,
+				FC0B8721201C6ABC002A826F /* TitleLabel.swift */,
 			);
 			path = Style;
 			sourceTree = "<group>";
@@ -153,6 +163,8 @@
 			children = (
 				FC03C083201B3A4A00095DDF /* ReuseIdentifier.swift */,
 				FC03C085201B3A6100095DDF /* TaCoExtension.swift */,
+				FC0B871D201C596F002A826F /* DetectCurrentCell.swift */,
+				FC0B871F201C6301002A826F /* RandomColor.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -351,13 +363,17 @@
 				FC03C066201B351700095DDF /* SignViewController.swift in Sources */,
 				FC0B8713201C3058002A826F /* RecommendCollectionViewCell.swift in Sources */,
 				FC94BE45201C12D40041959F /* AWSSetting.swift in Sources */,
+				FC0B8722201C6ABC002A826F /* TitleLabel.swift in Sources */,
 				FC03C07E201B399B00095DDF /* APIService.swift in Sources */,
 				FC03C081201B39C400095DDF /* SignService.swift in Sources */,
 				FC94BE47201C166A0041959F /* AWSPolly_TTS.swift in Sources */,
+				FC0B8720201C6301002A826F /* RandomColor.swift in Sources */,
 				FC0B8717201C320F002A826F /* ReviewTableViewCell.swift in Sources */,
 				FC94BE49201C1CB10041959F /* HomeViewController.swift in Sources */,
+				FC0B871C201C4ECB002A826F /* Designable.swift in Sources */,
 				FC03C084201B3A4A00095DDF /* ReuseIdentifier.swift in Sources */,
 				FC03C086201B3A6100095DDF /* TaCoExtension.swift in Sources */,
+				FC0B871E201C596F002A826F /* DetectCurrentCell.swift in Sources */,
 				FC03C064201B351700095DDF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

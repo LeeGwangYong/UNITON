@@ -6,10 +6,14 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="AppleSDGothicNeo.ttc">
+            <string>AppleSDGothicNeo-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Sign View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -45,23 +49,31 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="1DY-Mc-ePQ">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="400"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="500"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오늘의 추천책" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RpH-4D-LFO">
-                                            <rect key="frame" x="25" y="25" width="93" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오늘의 추천책" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RpH-4D-LFO" customClass="TitleLabel" customModule="UNITON" customModuleProvider="target">
+                                            <rect key="frame" x="25" y="25" width="93" height="20"/>
+                                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="W1C-Sf-5dE">
-                                            <rect key="frame" x="0.0" y="96" width="375" height="160"/>
+                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="W1C-Sf-5dE">
+                                            <rect key="frame" x="0.0" y="45" width="375" height="367"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ksf-AY-SVY">
                                                 <size key="itemSize" width="50" height="50"/>
                                                 <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                 <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                                 <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="sideItemScale">
+                                                        <real key="value" value="0.80000000000000004"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="sideItemAlpha">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </collectionViewFlowLayout>
                                             <cells>
                                                 <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="3QO-4n-pIT">
@@ -74,27 +86,28 @@
                                                 </collectionViewCell>
                                             </cells>
                                         </collectionView>
-                                        <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="awT-vR-eCe">
-                                            <rect key="frame" x="168" y="281" width="39" height="37"/>
+                                        <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" translatesAutoresizingMaskIntoConstraints="NO" id="awT-vR-eCe">
+                                            <rect key="frame" x="152" y="412" width="71" height="37"/>
+                                            <color key="pageIndicatorTintColor" red="0.87058823529411766" green="0.87058823529411766" blue="0.87058823529411766" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="currentPageIndicatorTintColor" red="0.47058823529411764" green="0.47058823529411764" blue="0.47058823529411764" alpha="1" colorSpace="calibratedRGB"/>
                                         </pageControl>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오늘의 리뷰" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJ3-yT-Y7Z">
-                                            <rect key="frame" x="25" y="350" width="78" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오늘의 리뷰" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJ3-yT-Y7Z" customClass="TitleLabel" customModule="UNITON" customModuleProvider="target">
+                                            <rect key="frame" x="25" y="469" width="78" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstItem="hJ3-yT-Y7Z" firstAttribute="leading" secondItem="RpH-4D-LFO" secondAttribute="leading" id="3It-fb-xdR"/>
-                                        <constraint firstItem="awT-vR-eCe" firstAttribute="top" secondItem="W1C-Sf-5dE" secondAttribute="bottom" constant="25" id="HT3-DI-ZXb"/>
+                                        <constraint firstItem="awT-vR-eCe" firstAttribute="top" secondItem="W1C-Sf-5dE" secondAttribute="bottom" id="HT3-DI-ZXb"/>
                                         <constraint firstItem="RpH-4D-LFO" firstAttribute="top" secondItem="1DY-Mc-ePQ" secondAttribute="top" constant="25" id="NpA-xZ-i5k"/>
-                                        <constraint firstItem="hJ3-yT-Y7Z" firstAttribute="top" secondItem="awT-vR-eCe" secondAttribute="bottom" constant="32" id="OaN-DU-XoF"/>
-                                        <constraint firstItem="W1C-Sf-5dE" firstAttribute="height" secondItem="1DY-Mc-ePQ" secondAttribute="height" multiplier="0.4" id="TMx-uF-NhO"/>
-                                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="hJ3-yT-Y7Z" secondAttribute="bottom" constant="25" id="Uyn-7v-wCp"/>
+                                        <constraint firstItem="hJ3-yT-Y7Z" firstAttribute="top" secondItem="awT-vR-eCe" secondAttribute="bottom" constant="20" id="OaN-DU-XoF"/>
                                         <constraint firstItem="W1C-Sf-5dE" firstAttribute="leading" secondItem="1DY-Mc-ePQ" secondAttribute="leading" id="Wz4-oQ-fIW"/>
                                         <constraint firstAttribute="trailing" secondItem="W1C-Sf-5dE" secondAttribute="trailing" id="ZYH-nY-kgp"/>
-                                        <constraint firstItem="W1C-Sf-5dE" firstAttribute="top" secondItem="RpH-4D-LFO" secondAttribute="bottom" constant="50" id="avv-B0-6It"/>
+                                        <constraint firstItem="W1C-Sf-5dE" firstAttribute="top" secondItem="RpH-4D-LFO" secondAttribute="bottom" id="avv-B0-6It"/>
+                                        <constraint firstAttribute="bottom" secondItem="hJ3-yT-Y7Z" secondAttribute="bottom" constant="10" id="cfY-4t-U6m"/>
                                         <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="RpH-4D-LFO" secondAttribute="trailing" constant="25" id="j4C-Ym-g1L"/>
                                         <constraint firstItem="awT-vR-eCe" firstAttribute="centerX" secondItem="W1C-Sf-5dE" secondAttribute="centerX" id="oO6-ma-8IK"/>
                                         <constraint firstItem="RpH-4D-LFO" firstAttribute="leading" secondItem="1DY-Mc-ePQ" secondAttribute="leading" constant="25" id="snj-Ht-XRk"/>
@@ -103,7 +116,7 @@
                                 </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="ZlJ-Z4-qFM">
-                                        <rect key="frame" x="0.0" y="428" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="528" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZlJ-Z4-qFM" id="oWl-FO-14p">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -134,6 +147,21 @@
             <point key="canvasLocation" x="1696.8" y="131.78410794602701"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="Y1r-Ve-Iiw">
+            <objects>
+                <viewController id="WUK-CG-CqF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TRF-Lf-54z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Gn6-wu-Jxk"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RH3-2K-FyE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2609" y="132"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="OTD-a9-mSq">
             <objects>
                 <viewController id="wyY-nN-Yfb" sceneMemberID="viewController">
@@ -147,7 +175,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XE1-67-yKQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2036" y="856.82158920539734"/>
+            <point key="canvasLocation" x="1697" y="876"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="LSb-YM-ddN">
@@ -156,14 +184,26 @@
                     <view key="view" contentMode="scaleToFill" id="WIO-px-r8y">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ula-hn-zke">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ula-hn-zke" firstAttribute="top" secondItem="Dvu-c6-Mt1" secondAttribute="top" id="1xg-XH-LKM"/>
+                            <constraint firstItem="Dvu-c6-Mt1" firstAttribute="bottom" secondItem="ula-hn-zke" secondAttribute="bottom" id="8Zm-Ib-0f8"/>
+                            <constraint firstItem="Dvu-c6-Mt1" firstAttribute="trailing" secondItem="ula-hn-zke" secondAttribute="trailing" id="DzN-Ve-nkd"/>
+                            <constraint firstItem="ula-hn-zke" firstAttribute="leading" secondItem="Dvu-c6-Mt1" secondAttribute="leading" id="iE8-hS-maq"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Dvu-c6-Mt1"/>
                     </view>
                     <navigationItem key="navigationItem" id="gQJ-H5-h3i"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vJY-SB-gpw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2375.1999999999998" y="1624.1379310344828"/>
+            <point key="canvasLocation" x="1697" y="1623"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="kR3-VD-x9j">
