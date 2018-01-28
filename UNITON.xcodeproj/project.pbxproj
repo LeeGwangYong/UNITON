@@ -26,7 +26,6 @@
 		FC0B8720201C6301002A826F /* RandomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0B871F201C6301002A826F /* RandomColor.swift */; };
 		FC0B8722201C6ABC002A826F /* TitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0B8721201C6ABC002A826F /* TitleLabel.swift */; };
 		FC0B8724201C6E8D002A826F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0B8723201C6E8D002A826F /* DetailViewController.swift */; };
-		FC6EDF56201D5D9600E6DB6F /* Voice.json in Resources */ = {isa = PBXBuildFile; fileRef = FC6EDF55201D5D9600E6DB6F /* Voice.json */; };
 		FC6EDF58201D5FC000E6DB6F /* empty_list.json in Resources */ = {isa = PBXBuildFile; fileRef = FC6EDF57201D5FC000E6DB6F /* empty_list.json */; };
 		FC94BE45201C12D40041959F /* AWSSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC94BE44201C12D40041959F /* AWSSetting.swift */; };
 		FC94BE47201C166A0041959F /* AWSPolly_TTS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC94BE46201C166A0041959F /* AWSPolly_TTS.swift */; };
@@ -71,7 +70,6 @@
 		FC0B871F201C6301002A826F /* RandomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomColor.swift; sourceTree = "<group>"; };
 		FC0B8721201C6ABC002A826F /* TitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleLabel.swift; sourceTree = "<group>"; };
 		FC0B8723201C6E8D002A826F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		FC6EDF55201D5D9600E6DB6F /* Voice.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Voice.json; path = ../../../Downloads/AE_JSON_Voice/Voice.json; sourceTree = "<group>"; };
 		FC6EDF57201D5FC000E6DB6F /* empty_list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = empty_list.json; sourceTree = "<group>"; };
 		FC94BE3D201C024F0041959F /* Bridging_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridging_Header.h; sourceTree = "<group>"; };
 		FC94BE44201C12D40041959F /* AWSSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWSSetting.swift; sourceTree = "<group>"; };
@@ -135,7 +133,6 @@
 			isa = PBXGroup;
 			children = (
 				FC6EDF57201D5FC000E6DB6F /* empty_list.json */,
-				FC6EDF55201D5D9600E6DB6F /* Voice.json */,
 				FC03C063201B351700095DDF /* AppDelegate.swift */,
 				FC03C07B201B379800095DDF /* Model */,
 				FC03C07A201B379200095DDF /* Protocol */,
@@ -312,7 +309,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC6EDF56201D5D9600E6DB6F /* Voice.json in Resources */,
 				FC6EDF58201D5FC000E6DB6F /* empty_list.json in Resources */,
 				FCF04FE0201CCDEE003A4E42 /* MyReviewTableViewCell.xib in Resources */,
 				FC03C06E201B351700095DDF /* LaunchScreen.storyboard in Resources */,

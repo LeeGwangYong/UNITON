@@ -87,9 +87,6 @@ class HomeViewController: UIViewController {
                 }
             case .Failure(let failureCode):
                 print("My Review is Failure : \(failureCode)")
-                //                switch failureCode {
-                //                case ... :
-                //                }
             }
         }
     }
@@ -115,9 +112,6 @@ class HomeViewController: UIViewController {
                 self.reviewTableView.reloadData()
             case .Failure(let failureCode):
                 print("My Review is Failure : \(failureCode)")
-                //                switch failureCode {
-                //                case ... :
-                //                }
             }
         }
     }
@@ -161,11 +155,11 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     
     
     func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        //Horiznotal Card Paging
         if scrollView == self.recommendCollectionView {
-            var width = self.recommendCollectionView.frame.width -  60
-            //            ( width * 1.2 - width ) / 2
-            let pageWidth: Float = Float( width / 2  +  30  ) //480 + 50
-            // width + space
+            let width = self.recommendCollectionView.frame.width -  60
+            let pageWidth: Float = Float( width / 2  +  30  ) //(Paging Item Size) + (Minimum spacing)
+            
             let currentOffset: Float = Float(scrollView.contentOffset.x)
             let targetOffset: Float = Float(targetContentOffset.pointee.x)
             var newTargetOffset: Float = 0
