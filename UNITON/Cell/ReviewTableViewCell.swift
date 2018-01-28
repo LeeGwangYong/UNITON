@@ -13,7 +13,19 @@ class ReviewTableViewCell: UITableViewCell {
     @IBOutlet weak var contentLabel: UILabel!
     @IBOutlet weak var likeButton: UIButton!
     @IBOutlet weak var backView: UIView!
-    
+    var info: Review? {
+        didSet{
+            nameLabel.text = "@_\((info?.id)!)"
+            contentLabel.text = info?.content
+            
+            if let isLike = info?.is_like{
+                let img = isLike == 1 ? #imageLiteral(resourceName: "HEART") : #imageLiteral(resourceName: "EMPTY_HEART")
+                likeButton.setImage(img, for: UIControlState.normal)
+            }
+            
+            
+        }
+    }
     override func awakeFromNib() {
         super.awakeFromNib()
     

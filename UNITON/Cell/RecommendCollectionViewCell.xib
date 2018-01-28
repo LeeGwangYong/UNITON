@@ -43,8 +43,8 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="연애의 온도" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2X6-Cf-0Fe">
-                        <rect key="frame" x="76" y="267.5" width="64.5" height="17"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="연애의 온도" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2X6-Cf-0Fe">
+                        <rect key="frame" x="21.5" y="267.5" width="172" height="17"/>
                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="14"/>
                         <color key="textColor" red="0.32156862745098036" green="0.32156862745098036" blue="0.32156862745098036" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
@@ -55,6 +55,7 @@
                 <constraint firstItem="2X6-Cf-0Fe" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="1TL-ch-GY6"/>
                 <constraint firstItem="S9s-Vd-pZ5" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.8" id="bT8-b1-HHa"/>
                 <constraint firstItem="S9s-Vd-pZ5" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" multiplier="0.9" id="c9B-gc-4BY"/>
+                <constraint firstItem="2X6-Cf-0Fe" firstAttribute="width" secondItem="S9s-Vd-pZ5" secondAttribute="width" id="eWm-nE-38k"/>
                 <constraint firstItem="2X6-Cf-0Fe" firstAttribute="top" secondItem="S9s-Vd-pZ5" secondAttribute="bottom" constant="12" id="ijC-Xl-wMb"/>
                 <constraint firstItem="ZTg-uK-7eu" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="2X6-Cf-0Fe" secondAttribute="bottom" id="tFo-Wj-VBG"/>
                 <constraint firstItem="S9s-Vd-pZ5" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="vKz-FY-ySu"/>

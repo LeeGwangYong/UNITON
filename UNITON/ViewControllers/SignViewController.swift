@@ -7,34 +7,31 @@
 //
 
 import UIKit
-import AVFoundation
-import AWSPolly
 
 class SignViewController: UIViewController {
     //MARK -: Properties
-    var audioPlayer = AVPlayer()
+    @IBOutlet weak var textField: UITextField!
+    
     
     //MARK -: Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
+        self.backgroundImage()
+        self.textField.delegate = self
     }
-
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
 }
 
-//import Lottie
-//private var boatAnimation: LOTAnimationView?
-//boatAnimation = LOTAnimationView(name: "Boat_Loader")
-//// Set view to full screen, aspectFill
-//boatAnimation!.autoresizingMask = [.flexibleHeight, .flexibleWidth]
-//boatAnimation!.contentMode = .scaleAspectFill
-//boatAnimation!.frame = lotView.bounds
-//// Add the Animation
-//lotView.addSubview(boatAnimation!)
-//
-////Play the first portion of the animation on loop until the download finishes.
-//boatAnimation!.play()
-//boatAnimation!.loopAnimation = true
-
-//AWSPolly_TTS.continueSpeach(audioPlayer: audioPlayer, text: "안녕 안녕 ")
+extension SignViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        UserDefaults.standard.set(textField.text, forKey: "id")
+        let nextVC =  UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: TabBarViewController.reuseIdentifier)
+        self.present(nextVC, animated: true, completion: nil)
+        textField.text = nil
+        return true
+    }
+}

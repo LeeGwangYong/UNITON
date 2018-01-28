@@ -14,6 +14,7 @@ target 'UNITON' do
     pod 'AWSCognito'
     pod 'AWSCognitoIdentityProvider'
     pod 'AWSPolly'
+    pod 'Toast-Swift'
   # Pods for UNITON
 
 end

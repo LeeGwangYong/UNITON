@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         let credentialProvider = AWSCognitoCredentialsProvider(regionType: AWS_REGION, identityPoolId: COGNITO_IDENTITY_POOLID)
-        
+        Thread.sleep(forTimeInterval: 0.5)
         let configuration = AWSServiceConfiguration(
             region: AWS_REGION,
             credentialsProvider: credentialProvider)

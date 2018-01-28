@@ -16,8 +16,8 @@ struct AWSPolly_TTS{
     
     static func continueSpeach(audioPlayer: AVPlayer, text: String) {
         task.continueOnSuccessWith { (awsTask: AWSTask<AWSPollyDescribeVoicesOutput>) -> Any? in
-//            let data = (awsTask.result! as AWSPollyDescribeVoicesOutput).voices
-//            let sortedVoices = data!.sorted(by: { $0.languageName! < $1.languageName! })
+            //            let data = (awsTask.result! as AWSPollyDescribeVoicesOutput).voices
+            //            let sortedVoices = data!.sorted(by: { $0.languageName! < $1.languageName! })
             let input = AWSPollySynthesizeSpeechURLBuilderRequest()
             input.text = text
             input.outputFormat = AWSPollyOutputFormat.mp3
@@ -37,4 +37,16 @@ struct AWSPolly_TTS{
     }
 }
 
+extension AVPlayer {
+    //run this every 1 second of streaming (or use KVO)
+    //In Http stream the duration it going to increase and probably finallize near to 7% of the total duration of the song
+    func getCurrentTrackDuration () -> Float64 {
+        guard let currentItem = self.currentItem else { return 0.0 }
+        guard currentItem.loadedTimeRanges.count > 0 else { return 0.0 }
+        
+        let timeInSecond = CMTimeGetSeconds((currentItem.loadedTimeRanges[0].timeRangeValue).duration);
+        
+        return timeInSecond >= 0.0 ? timeInSecond : 0.0
+    }
+}
 

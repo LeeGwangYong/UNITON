@@ -7,12 +7,27 @@
 //
 
 import UIKit
+import Kingfisher
 
 class MyReviewTableViewCell: UITableViewCell {
+    
     @IBOutlet weak var thumbnailImageView: UIImageView!
     @IBOutlet weak var bookNameLabel: UILabel!
     @IBOutlet weak var writerLabel: UILabel!
     @IBOutlet weak var reviewLabel: UILabel!
+    
+    var info: Review? {
+        didSet {
+            self.bookNameLabel.text = info?.title
+            self.writerLabel.text = info?.author
+        
+            if let url = info?.image {
+                self.thumbnailImageView.kf.indicatorType = .activity
+                self.thumbnailImageView.kf.setImage(with: URL(string: url))
+            }
+            reviewLabel.text = info?.content
+        }
+    }
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

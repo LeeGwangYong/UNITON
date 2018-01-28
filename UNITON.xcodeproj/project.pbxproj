@@ -26,6 +26,8 @@
 		FC0B8720201C6301002A826F /* RandomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0B871F201C6301002A826F /* RandomColor.swift */; };
 		FC0B8722201C6ABC002A826F /* TitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0B8721201C6ABC002A826F /* TitleLabel.swift */; };
 		FC0B8724201C6E8D002A826F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0B8723201C6E8D002A826F /* DetailViewController.swift */; };
+		FC6EDF56201D5D9600E6DB6F /* Voice.json in Resources */ = {isa = PBXBuildFile; fileRef = FC6EDF55201D5D9600E6DB6F /* Voice.json */; };
+		FC6EDF58201D5FC000E6DB6F /* empty_list.json in Resources */ = {isa = PBXBuildFile; fileRef = FC6EDF57201D5FC000E6DB6F /* empty_list.json */; };
 		FC94BE45201C12D40041959F /* AWSSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC94BE44201C12D40041959F /* AWSSetting.swift */; };
 		FC94BE47201C166A0041959F /* AWSPolly_TTS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC94BE46201C166A0041959F /* AWSPolly_TTS.swift */; };
 		FC94BE49201C1CB10041959F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC94BE48201C1CB10041959F /* HomeViewController.swift */; };
@@ -38,6 +40,11 @@
 		FCF04FE0201CCDEE003A4E42 /* MyReviewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCF04FDE201CCDEE003A4E42 /* MyReviewTableViewCell.xib */; };
 		FCF04FE2201CD514003A4E42 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF04FE1201CD514003A4E42 /* MyViewController.swift */; };
 		FCF04FE4201CDFBF003A4E42 /* ReviewInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF04FE3201CDFBF003A4E42 /* ReviewInputViewController.swift */; };
+		FCF22768201CE4A300A6374A /* ReviewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF22767201CE4A300A6374A /* ReviewService.swift */; };
+		FCF2276A201CE80600A6374A /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF22769201CE80600A6374A /* Review.swift */; };
+		FCF2276C201CF27F00A6374A /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF2276B201CF27F00A6374A /* Book.swift */; };
+		FCF2276E201CF55A00A6374A /* BookService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF2276D201CF55A00A6374A /* BookService.swift */; };
+		FCF22772201D456900A6374A /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF22771201D456900A6374A /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +71,8 @@
 		FC0B871F201C6301002A826F /* RandomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomColor.swift; sourceTree = "<group>"; };
 		FC0B8721201C6ABC002A826F /* TitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleLabel.swift; sourceTree = "<group>"; };
 		FC0B8723201C6E8D002A826F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		FC6EDF55201D5D9600E6DB6F /* Voice.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Voice.json; path = ../../../Downloads/AE_JSON_Voice/Voice.json; sourceTree = "<group>"; };
+		FC6EDF57201D5FC000E6DB6F /* empty_list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = empty_list.json; sourceTree = "<group>"; };
 		FC94BE3D201C024F0041959F /* Bridging_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridging_Header.h; sourceTree = "<group>"; };
 		FC94BE44201C12D40041959F /* AWSSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWSSetting.swift; sourceTree = "<group>"; };
 		FC94BE46201C166A0041959F /* AWSPolly_TTS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWSPolly_TTS.swift; sourceTree = "<group>"; };
@@ -77,6 +86,11 @@
 		FCF04FDE201CCDEE003A4E42 /* MyReviewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyReviewTableViewCell.xib; sourceTree = "<group>"; };
 		FCF04FE1201CD514003A4E42 /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
 		FCF04FE3201CDFBF003A4E42 /* ReviewInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewInputViewController.swift; sourceTree = "<group>"; };
+		FCF22767201CE4A300A6374A /* ReviewService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewService.swift; sourceTree = "<group>"; };
+		FCF22769201CE80600A6374A /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		FCF2276B201CF27F00A6374A /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		FCF2276D201CF55A00A6374A /* BookService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookService.swift; sourceTree = "<group>"; };
+		FCF22771201D456900A6374A /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +134,8 @@
 		FC03C062201B351700095DDF /* UNITON */ = {
 			isa = PBXGroup;
 			children = (
+				FC6EDF57201D5FC000E6DB6F /* empty_list.json */,
+				FC6EDF55201D5D9600E6DB6F /* Voice.json */,
 				FC03C063201B351700095DDF /* AppDelegate.swift */,
 				FC03C07B201B379800095DDF /* Model */,
 				FC03C07A201B379200095DDF /* Protocol */,
@@ -142,6 +158,8 @@
 				FC03C07D201B399B00095DDF /* APIService.swift */,
 				FC03C080201B39C400095DDF /* SignService.swift */,
 				FC94BE46201C166A0041959F /* AWSPolly_TTS.swift */,
+				FCF22767201CE4A300A6374A /* ReviewService.swift */,
+				FCF2276D201CF55A00A6374A /* BookService.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -165,6 +183,7 @@
 				FCF04FD5201CA91F003A4E42 /* FindViewController.swift */,
 				FCF04FE1201CD514003A4E42 /* MyViewController.swift */,
 				FCF04FE3201CDFBF003A4E42 /* ReviewInputViewController.swift */,
+				FCF22771201D456900A6374A /* TabBarViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -207,6 +226,8 @@
 			isa = PBXGroup;
 			children = (
 				FC94BE44201C12D40041959F /* AWSSetting.swift */,
+				FCF22769201CE80600A6374A /* Review.swift */,
+				FCF2276B201CF27F00A6374A /* Book.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -291,6 +312,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC6EDF56201D5D9600E6DB6F /* Voice.json in Resources */,
+				FC6EDF58201D5FC000E6DB6F /* empty_list.json in Resources */,
 				FCF04FE0201CCDEE003A4E42 /* MyReviewTableViewCell.xib in Resources */,
 				FC03C06E201B351700095DDF /* LaunchScreen.storyboard in Resources */,
 				FCF04FDC201CB441003A4E42 /* FindCollectionViewCell.xib in Resources */,
@@ -323,6 +346,7 @@
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework",
 				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 				"${PODS_ROOT}/naveridlogin-sdk-ios/NaverThirdPartyLogin.framework",
 			);
@@ -340,6 +364,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast_Swift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NaverThirdPartyLogin.framework",
 			);
@@ -392,6 +417,7 @@
 				FC0B8713201C3058002A826F /* RecommendCollectionViewCell.swift in Sources */,
 				FCF04FE4201CDFBF003A4E42 /* ReviewInputViewController.swift in Sources */,
 				FC94BE45201C12D40041959F /* AWSSetting.swift in Sources */,
+				FCF22772201D456900A6374A /* TabBarViewController.swift in Sources */,
 				FC0B8722201C6ABC002A826F /* TitleLabel.swift in Sources */,
 				FC03C07E201B399B00095DDF /* APIService.swift in Sources */,
 				FCF04FDF201CCDEE003A4E42 /* MyReviewTableViewCell.swift in Sources */,
@@ -403,13 +429,17 @@
 				FCF04FD8201CAB02003A4E42 /* SetUpViewController.swift in Sources */,
 				FC0B8724201C6E8D002A826F /* DetailViewController.swift in Sources */,
 				FC0B8720201C6301002A826F /* RandomColor.swift in Sources */,
+				FCF2276A201CE80600A6374A /* Review.swift in Sources */,
 				FC0B8717201C320F002A826F /* ReviewTableViewCell.swift in Sources */,
 				FC94BE49201C1CB10041959F /* HomeViewController.swift in Sources */,
 				FC0B871C201C4ECB002A826F /* Designable.swift in Sources */,
+				FCF22768201CE4A300A6374A /* ReviewService.swift in Sources */,
 				FCF04FD2201C7B64003A4E42 /* TotalReviewViewController.swift in Sources */,
 				FC03C084201B3A4A00095DDF /* ReuseIdentifier.swift in Sources */,
 				FC03C086201B3A6100095DDF /* TaCoExtension.swift in Sources */,
+				FCF2276E201CF55A00A6374A /* BookService.swift in Sources */,
 				FC0B871E201C596F002A826F /* DetectCurrentCell.swift in Sources */,
+				FCF2276C201CF27F00A6374A /* Book.swift in Sources */,
 				FC03C064201B351700095DDF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

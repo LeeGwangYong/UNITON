@@ -7,13 +7,14 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class FindViewController: UIViewController {
 
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var searchBarTopConstraint: NSLayoutConstraint!
     @IBOutlet weak var resultCollectionView: UICollectionView!
-    
+    var books: [Book] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,15 +41,43 @@ class FindViewController: UIViewController {
             self.view.layoutIfNeeded()
         }
     }
+    
+    func fetchGetBooks(str: String) {
+    
+        
+        BookService.getSearchData(url: "search_book/search/book/", parameter: ["query" : str], completion: { (result) in
+            switch result {
+            case .Success(let response):
+                guard let data = response as? Data else {return}
+                let dataJSON = JSON(data)
+                print(dataJSON)
+                let responseJSON = dataJSON["items"]
+                let decoder = JSONDecoder()
+                do {
+                    self.books = try decoder.decode([Book].self, from: responseJSON.rawData())
+                    self.resultCollectionView.reloadData()
+                }
+                catch (let err) {
+                    print(err.localizedDescription)
+                }
+            case .Failure(let failureCode):
+                print("My Review is Failure : \(failureCode)")
+                //                switch failureCode {
+                //                case ... :
+                //                }
+            }
+        })
+    }
 }
 
 extension FindViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return books.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell: FindCollectionViewCell = collectionView.dequeueReusableCell(forIndexPath: indexPath)
+        cell.info = books[indexPath.row]
         return cell
     }
     
@@ -70,7 +99,9 @@ extension FindViewController: UICollectionViewDelegate, UICollectionViewDataSour
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        let nextVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: DetailViewController.reuseIdentifier)
+        let nextVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: DetailViewController.reuseIdentifier) as! DetailViewController
+        nextVC.bookData = books[indexPath.row]
+        
         self.hidesBottomBarWhenPushed = true
         self.navigationController?.pushViewController(nextVC, animated: true)
         self.hidesBottomBarWhenPushed = false
@@ -84,8 +115,16 @@ extension FindViewController: UISearchBarDelegate {
         }
         else {
             constraintUp(value: false)
+            self.books = []
+            self.resultCollectionView.reloadData()
         }
-        
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+        if let text = searchBar.text {
+            fetchGetBooks(str: text)
+        }
     }
 }
 

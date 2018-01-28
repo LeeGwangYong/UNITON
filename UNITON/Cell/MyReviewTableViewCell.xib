@@ -101,7 +101,7 @@
             <connections>
                 <outlet property="bookNameLabel" destination="q8j-Xh-7Cs" id="nIf-eX-dCk"/>
                 <outlet property="reviewLabel" destination="sCq-bo-y4j" id="ezb-Mz-2Ux"/>
-                <outlet property="thumbnailImageView" destination="5qT-FS-MGd" id="Lmd-7i-KkM"/>
+                <outlet property="thumbnailImageView" destination="5qT-FS-MGd" id="DEH-Oa-YNP"/>
                 <outlet property="writerLabel" destination="NhB-qn-p6D" id="9xa-Mc-Ayx"/>
             </connections>
             <point key="canvasLocation" x="154.5" y="236"/>
